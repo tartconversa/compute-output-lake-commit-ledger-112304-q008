@@ -4,10 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "compute_output_lake_commit_ledger"
-version = "0.1.0"
-description = "科研数据湖合成资料"
+version = "1.0.0"
+description = "科研计算输出的提交账本、提交恢复与分区可见性管理"
 requires-python = ">=3.11,<3.15"
 dependencies = []
+
+[project.scripts]
+lake-ledger = "compute_output_lake_commit_ledger.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
